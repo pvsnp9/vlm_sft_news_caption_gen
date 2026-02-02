@@ -6,7 +6,6 @@ from typing import List, Tuple
 
 @dataclass
 class Logistics:
-    project_root_dir: str = "/projects/mzampier/tsuyog/news_caption_gen_sft"
     output_root_dir: str = "outputs"
     models_output_dir: str = "outputs/models"
     data_dir: str = "data"
@@ -134,7 +133,7 @@ class SFTParams:
     seed: int = 42
 
     # Output
-    model_dir: str = "/projects/mzampier/tsuyog/news_caption_gen_sft/outputs/models"
+    model_dir: str = "/projects/mzampier/tsuyog/vlm_sft_news_caption_gen/outputs/models"
 
     # Early stopping (only if you actually add the callback)
     early_stopping_patience: int = 3
