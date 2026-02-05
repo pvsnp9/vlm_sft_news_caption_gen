@@ -26,6 +26,7 @@ class Logistics:
     infer_bathc_size:int = 4
     gen_max_token:int = 128
 
+    train_sample_size:int = 10000
 
     hf_token:any = None
     wandb_token: any = None

@@ -93,7 +93,7 @@ def main() -> None:
     if getattr(model, "config", None) is not None:
         model.config.use_cache = extras.use_cache
 
-    train_datasets, eval_dataset = load_train_eval_sft_dataset()
+    train_datasets, eval_dataset = load_train_eval_sft_dataset(sample_size=logistics.train_sample_size)
     train_datasets = _select_subset(train_datasets, cfg["dataset"]["max_train_samples"])
     eval_dataset = _select_subset(eval_dataset, cfg["dataset"]["max_eval_samples"])
 
